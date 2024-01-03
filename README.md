@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **claudiamendezt19@gmail.com**
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with me: **www.linkedin.com/in/claudia-mendez-357507267** </h3>
 <p align="left">
 </p>
 
