@@ -3,11 +3,11 @@
 
 - 🔭 I’m currently working on **uber clone**
 
-- 🌱 I’m currently learning **Frameworks like bootstrap, tailwind and bulma**
+- 🌱 I’m currently learning **Frameworks like bootstrap and bulma**
 
-- 👯 I’m looking to collaborate on **HTML, CSS**
+- 👯 I’m looking to collaborate on **HTML, CSS, JS**
 
-- 🤝 I’m looking for help with **JavaScript**
+- 🤝 I’m looking for help with **JavaScript, React JS and React Native**
 
 - 📫 How to reach me **claudiamendezt19@gmail.com**
 
