@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
   font-family: "Rubik", sans-serif;
 }
 
@@ -13,6 +16,9 @@
   --first: #fff;
   --second: #000;
   --mob-color: #363636;
+  --big-font: 2.5rem;
+  --normal-font: 2rem;
+  --neon-box-shadow: 0 0 .5rem #f52cf9;
 }
 
 body.dark-mode {
@@ -21,6 +27,7 @@ body.dark-mode {
   --first: #222;
   --second: #fff;
   --mob-color: #eae6e6;
+  --neon-box-shadow: 0 0 .5rem #222;
 }
 
 .container {
@@ -35,6 +42,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 20px 10px;
 }
 header nav {
   display: flex;
@@ -43,12 +52,16 @@ header nav {
 }
 header nav .logo {
   z-index: 1;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 header nav .logo a {
   text-decoration: none;
   font-size: 32px;
   font-weight: 600;
   color: var(--first);
+  padding: 10px 20px;
 }
 header nav .logo a span {
   color: var(--color);
@@ -90,6 +103,7 @@ header nav .list-darkmode-menu ul li a::before {
   height: 2.5px;
   background: var(--color);
   transition: 0.3s ease;
+  box-shadow: var(--neon-box-shadow);
 }
 header nav .list-darkmode-menu .mode {
   color: var(--text-color);
@@ -211,8 +225,12 @@ header nav .list-darkmode-menu .hamburger.active .bar {
 .home .home-info .left .social {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 15px;
   margin: 25px 0;
+  margin-top: 5rem;
+  width: 220px;
+  height: 40px;
 }
 .home .home-info .left .social a {
   text-decoration: none;
@@ -226,6 +244,7 @@ header nav .list-darkmode-menu .hamburger.active .bar {
   justify-content: center;
   transition: 0.4s ease;
   border: 2px solid var(--color);
+  box-shadow: var(--neon-box-shadow);
 }
 .home .home-info .left .social a i {
   font-size: 20px;
@@ -240,6 +259,7 @@ header nav .list-darkmode-menu .hamburger.active .bar {
   align-items: center;
   gap: 20px;
   margin: 25px 0;
+  margin-top: 4rem;
 }
 .home .home-info .left .btn button {
   font-size: 15px;
@@ -252,6 +272,7 @@ header nav .list-darkmode-menu .hamburger.active .bar {
   outline: none;
   cursor: pointer;
   transition: 0.3s ease-in;
+  box-shadow: var(--neon-box-shadow);
 }
 .home .home-info .left .btn button:hover {
   color: #fff;
@@ -267,7 +288,7 @@ header nav .list-darkmode-menu .hamburger.active .bar {
 .home .home-info .right .profile img {
   width: 450px;
   height: 450px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
   border-radius: 50%;
   border: 3px solid var(--color);
