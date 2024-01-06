@@ -10,6 +10,7 @@
 }
 
 :root {
+  --font-primary: "Rubik", sans-serif;
   --text-color: #fff;
   --color: #f52cf9;
   --bg-color: #1c1c1d;
@@ -178,7 +179,7 @@ header nav .list-darkmode-menu .hamburger.active .bar {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   z-index: -1;
   padding: 300px 0 50px;
 }
@@ -219,7 +220,7 @@ header nav .list-darkmode-menu .hamburger.active .bar {
   line-height: 25px;
   color: var(--first);
   mask-border: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: justify;
 }
 .home .home-info .left .social {
@@ -228,7 +229,7 @@ header nav .list-darkmode-menu .hamburger.active .bar {
   justify-content: space-between;
   gap: 15px;
   margin: 25px 0;
-  margin-top: 5rem;
+  margin-top: 2rem;
   width: 220px;
   height: 40px;
 }
@@ -423,6 +424,111 @@ header nav .list-darkmode-menu .hamburger.active .bar {
     width: 280px;
     height: 280px;
   }
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2em;
+  background: var(--bg-color);
+}
+.about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-content .left {
+  flex: 1;
+  padding: 50px 0;
+}
+.about .about-content .left span {
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: var(--first);
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+.about .about-content .left h1 {
+  color: var(--color);
+  font-size: var(--normal-font);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.about .about-content .left h2 {
+  color: var(--first);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.about .about-content .left p {
+  font-weight: 300;
+  color: var(--first);
+  margin-bottom: 1.5rem;
+}
+.about .about-content .left .btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 25px 0;
+  margin-top: 4rem;
+}
+.about .about-content .left .btn button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 25px;
+  color: var(--color);
+  background: transparent;
+  border: 2px solid var(--color);
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  box-shadow: var(--neon-box-shadow);
+}
+.about .about-content .left .btn button:hover {
+  color: #fff;
+  background: var(--color);
+  transform: translateY(-7px);
+}
+.about .about-content .right {
+  flex: 1;
+}
+.about .about-content .right .img-about {
+  text-align: center;
+  position: relative;
+}
+.about .about-content .right .img-about img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 3px solid var(--color);
+  box-shadow: 0 0 40px var(--color);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.about .about-content .right .img-about img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 80px var(--color);
+}
+.about .about-content .right .info-about1,
+.about .about-content .right .info-about2,
+.about .about-content .right .info-about3 {
+  background: var(--color);
+  position: absolute;
+  font-size: 0.5rem;
+  padding: 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 69% 31% 66% 34%/21% 30% 70% 79%;
+  display: block;
+  box-shadow: var(--neon-box-shadow);
+  border: 2px solid var(--color);
+  outline: 1px solid var(--color);
+  z-index: 100;
+  animation: morph 6s linear infinite;
 }
 
 /*# sourceMappingURL=styles.css.map */

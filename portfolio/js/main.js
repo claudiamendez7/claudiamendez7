@@ -31,7 +31,7 @@ darkModeButton.addEventListener('change', () => {
 const typed = new Typed('.multiple', {
     strings: [
         'Web Designer',
-        'Jr Front-End Developer',
+        'Jr FrontEnd Developer',
         'creative person',
         'Freelancer'
     ],

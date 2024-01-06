@@ -8,9 +8,10 @@
     scroll-behavior: smooth;
     text-decoration: none;
     font-family: "Rubik", sans-serif;
-}
-
-:root {
+  }
+  
+  :root {
+    --font-primary: "Rubik", sans-serif;
     --text-color: #fff;
     --color: #f52cf9;
     --bg-color: #1c1c1d;
@@ -20,16 +21,16 @@
     --big-font: 2.5rem;
     --normal-font: 2rem;
     --neon-box-shadow: 0 0 .5rem #f52cf9;
-}
-
-body.dark-mode {
+  }
+  
+  body.dark-mode {
     --text-color: #222;
     --bg-color: #f2f2f2;
     --first: #222;
     --second: #fff;
     --mob-color: #eae6e6;
     --neon-box-shadow: 0 0 .5rem #222;
-}
+  }
 
 .container {
     max-width: 1250px;
@@ -207,7 +208,7 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     z-index: -1;
     padding: 300px 0 50px;
 
@@ -252,7 +253,7 @@ header {
                 line-height: 25px;
                 color: var(--first);
                 mask-border: 50px;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
                 text-align: justify;
             }
 
@@ -262,7 +263,7 @@ header {
                 justify-content: space-between;
                 gap: 15px;
                 margin: 25px 0;
-                margin-top: 5rem;
+                margin-top: 2rem;
                 width: 220px;
                 height: 40px;
 
@@ -539,6 +540,127 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+
+// About section
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2em;
+    background: var(--bg-color);
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left {
+            flex: 1;
+            padding: 50px 0;
+
+            span {
+                font-size: .8rem;
+                font-weight: 200;
+                letter-spacing: 2px;
+                color: var(--first);
+                text-transform: uppercase;
+                margin-bottom: 5rem;
+            }
+
+            h1 {
+                color: var(--color);
+                font-size: var(--normal-font);
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                color: var(--first);
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 2rem;
+            }
+
+            p {                
+                font-weight: 300;
+                color: var(--first);
+                margin-bottom: 1.5rem;
+            }
+            
+            .btn {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin: 25px 0;
+                margin-top: 4rem;
+
+                button {
+                    font-size: 15px;
+                    font-weight: 600;
+                    padding: 12px 24px;
+                    border-radius: 25px;
+                    color: var(--color);
+                    background: transparent;
+                    border: 2px solid var(--color);
+                    outline: none;
+                    cursor: pointer;
+                    transition: 0.3s ease-in;
+                    box-shadow: var(--neon-box-shadow);
+
+                    &:hover {
+                        color: #fff;
+                        background: var(--color);
+                        transform: translateY(-7px);
+                    }
+                }
+            }
+        }
+
+        .right {
+            flex: 1;
+            
+            .img-about{
+                text-align: center;
+                position: relative;
+
+                img {
+                    width: 300px;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: top;
+                    border-radius: 50%;
+                    border: 3px solid var(--color);
+                    box-shadow: 0 0 40px var(--color);
+                    cursor: pointer;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: 0 0 80px var(--color);
+                    }
+                }
+            }
+            .info-about1,
+            .info-about2,
+            .info-about3 {
+                background: var(--color);
+                position: absolute;
+                font-size: 0.5rem;
+                padding: 10px;
+                width: 90px;
+                height: 90px;
+                border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+                display: block;
+                box-shadow: var(--neon-box-shadow);
+                border: 2px solid var(--color);
+                outline: 1px solid var(--color);
+                z-index: 100;
+                animation: morph 6s linear infinite;
+            }
+
         }
     }
 }
