@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Gamers</a>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Tournaments</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+        <div class="toggleMenu"></div>
+    </header>
+
+    <!-- Home Banner -->
+
+    <div class="banner">
+        <div class="bg">
+            <div class="content">
+                <h2>A New Home for <br>
+                    Game Lovers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perferendis mollitia minima nemo ratione laudantium eveniet</p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+            <img src="img/DC-Flag_.png" alt="">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about">
+        <div class="contentBx">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, omnis tempore! Molestias quae harum veritatis odit omnis, 
+                cupiditate quia expedita fugiat corporis eum. Id recusandae expedita libero sequi voluptatum doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, omnis tempore! Molestias quae harum veritatis odit omnis, 
+                cupiditate quia expedita fugiat corporis eum. Id recusandae expedita libero sequi voluptatum doloribus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, omnis tempore! Molestias quae harum veritatis odit omnis, 
+                cupiditate quia expedita fugiat corporis eum. Id recusandae expedita libero sequi voluptatum doloribus.</p>
+            <a href="#">Read more</a>
+        </div>
+        <img src="img/profile.png" alt="">
+    </div>
+
+    <div class="games">
+        <h2>Popular Games</h2>
+        <ul>
+            
+        </ul>
+    </div>
+    <script>
+        // Sticky NavBar
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+
+</body>
+</html>
