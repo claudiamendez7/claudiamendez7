@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <nav class="header__menu">
+          <a class="header__menu__link" href="index.html">Inicio</a>
+          <a class="header__menu__link" href="about.html">Sobre mí</a>
+          <a class="header__menu__link" href="curriculum.html">Curriculum</a>
+      </nav>
+    </header>
     <main class="presentacion">
       <section class="presentacion__contenido">
         <h1 class="presentacion__contenido__titulo">
@@ -19,12 +25,20 @@
           React, HTML y CSS. Ayudo a pequeños negocios y diseñadores a llevar a
           cabo buenas ideas. ¿Hablamos?
         </p>
+
         <div class="presentacion__enlaces">
-          <a class="presentacion__enlaces__link" href="#">Instagram</a>
-          <a class="presentacion__enlaces__link"" href="#">GitHub</a>
+          <h2 class="presentacion__enlaces__subtitulo"">Accede a mis redes: </h2>
+          <a class="presentacion__enlaces__link" href="#"><img src="assets/github.png" alt="icono github">Github</a>
+          <a class="presentacion__enlaces__link"" href="#"><img src="assets/linkedin.png" alt="icono linkedin">LinkedIn</a>
+          <a class="presentacion__enlaces__link"" href="#"><img src="assets/twitter.png" alt="icono twitter">Twitter</a>
         </div>
+
       </section>
-      <img src="Imagem.png" alt="imagen Ana" />
+      <img src="assets/Imagem.png" alt="imagen Ana" />
+
     </main>
+    <footer class="footer">
+      <p>Desarrollado por clauDev__</p>
+    </footer>
   </body>
 </html>
