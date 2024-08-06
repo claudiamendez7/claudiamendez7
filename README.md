@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Claudia Mendez</h1>
+<h1 align="center">Hi 👋, This is Claudia Mendez</h1>
 <h3 align="center">A passionate frontend developer in the making from Colombia</h3>
 
 - 🔭 I’m currently working on **surgeons landing page**
